@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 199, 189);
+}
+
+/* font  */
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ------------------- */
+.container {
+  display: flex;
+  width: 100vw;
+  margin: auto;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(135, 22, 0, 0.717),
+    rgb(175, 0, 0),
+    rgb(127, 0, 0),
+    rgb(93, 0, 0)
+  );
+}
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo #joblogo {
+  width: 50px;
+  height: 35px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.container .navbar ul {
+  margin: 0 auto;
+}
+
+.container .navbar li {
+  padding-bottom: 2rem;
+}
+
+.container .navbar li a {
+  font-size: 16px;
+
+  color: #ffffff9a;
+  transition: 0.3s;
+}
+
+.container .navbar li a:hover {
+  font-size: 18px;
+  color: #fff;
+}
+
+nav i {
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+}
+
+#Ana {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+/* -------------------- CSS MAIN CONTENT CODE ------------------------ */
+.main {
+  width: 100%;
+}
+
+.main-body {
+  padding: 10px 10px 10px 10px;
+}
+
+h1 {
+  margin: 20px 10px;
+  color: #550101;
+}
+
+#headline {
+  top: 12%;
+  color: #550101;
+  padding-left: 20px;
+}
+/* ------------------ CSS CODE OF STUDENT CARD ------------------------- */
+.candidate {
+  width: auto;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+  background-size: cover;
+  padding: 10px 10px 10px 10px;
+  justify-content: space-between;
+}
+
+.profile {
+  position: relative;
+  width: 300px;
+  height: 160px;
+  display: flex;
+  overflow: hidden;
+  transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 6px;
+  box-shadow: 4px 7px 15px 0px rgba(0, 0, 0, 0.265);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 172, 130),
+    rgb(255, 0, 51),
+    rgb(181, 0, 0)
+  );
+}
+
+.profile:hover {
+  transform: scale(110%);
+}
+
+.profile::after {
+  position: relative;
+  content: "";
+  width: 400px;
+  height: 40px;
+  opacity: 0.7;
+  filter: blur(10px);
+  transition: ease-in-out 800ms;
+  box-shadow: 0px 0px 25px 10px white;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(130deg) translateX(30%) translateY(500%);
+}
+
+.profile:hover::after {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 40px;
+  background-color: rgba(255, 255, 255);
+  transform: rotate(130deg) translateX(15%) translateY(-520%);
+}
+.elli1 {
+  position: absolute;
+  left: -10%;
+  top: 55%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff14;
+  border: 2px solid rgba(255, 255, 255, 0.153);
+  box-shadow: inset 4px 8px 15px 1px rgba(255, 255, 255, 0.445);
+}
+.elli2 {
+  position: absolute;
+  left: 85%;
+  top: -5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff28;
+  border: 2px solid rgba(255, 255, 255, 0.153);
+  box-shadow: inset 4px 8px 15px 1px rgba(255, 255, 255, 0.445);
+}
+.profinfo {
+  margin: 10px;
+  width: 110px;
+  height: 140px;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.profinfo img {
+  width: 90px;
+  height: 90px;
+  margin: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1.2px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.397);
+}
+.profinfo h6 {
+  position: relative;
+  top: -4%;
+  font-size: 14px;
+  margin: 0px 12px;
+  width: max-content;
+  text-align: center;
+  color: #ffffffe9;
+}
+.skillss {
+  position: relative;
+  top: -6%;
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+  height: 20px;
+  margin: 0px 10px 0px 10px;
+}
+.skillss h4 {
+  color: #fff;
+  font-size: 7px;
+  margin-top: 5%;
+  padding: 2px 4px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.272);
+  border: 1.2px solid rgba(255, 255, 255, 0.461);
+}
+.skillss h5 {
+  color: #fff;
+  font-size: 7px;
+  margin-top: 5%;
+  padding: 2px 4px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.272);
+  border: 1.2px solid rgba(255, 255, 255, 0.461);
+}
+.skillss h3 {
+  color: #fff;
+  font-size: 7px;
+  margin-top: 5%;
+  padding: 2px 4px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.272);
+  border: 1.2px solid rgba(255, 255, 255, 0.461);
+}
+.skillss p {
+  color: #fff;
+  font-size: 7px;
+  margin-top: 5%;
+  padding: 2px 4px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.272);
+  border: 1.2px solid rgba(255, 255, 255, 0.461);
+}
+.profmain {
+  position: absolute;
+  top: 10%;
+  left: 44%;
+  width: 144px;
+  height: 50px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  box-shadow: inset 2px 2px 10px 1px rgba(255, 255, 255, 0.253);
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.profmain #connections {
+  margin: 8px;
+  width: 72px;
+  text-align: left;
+  padding-left: 4px;
+  padding-right: 12px;
+  border-right: 2px solid #ffffff8f;
+}
+.profmain #connections p {
+  color: #ffffffe8;
+  font-weight: 600;
+}
+.profmain #connections h6 {
+  font-size: 8px;
+  margin-top: 1%;
+  color: #ffffffb2;
+}
+.profmain #following {
+  margin: 8px;
+  width: 72px;
+  text-align: left;
+}
+.profmain #following p {
+  font-weight: 600;
+  color: #ffffffe8;
+}
+.profmain #following h6 {
+  font-size: 8px;
+  margin-top: 1%;
+  color: #ffffffb2;
+}
+
+#headd {
+  position: absolute;
+  font-size: 8px;
+  top: 46%;
+  left: 44%;
+  color: #fff;
+}
+.applications {
+  position: absolute;
+  top: 55%;
+  left: 44%;
+  width: 144px;
+  height: 55px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.applications::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+.applications::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ffffffae;
+}
+.applications::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff4a;
+}
+.applications .appli {
+  width: 135px;
+  height: 35px;
+  margin-bottom: 4%;
+  border-radius: 4px;
+  background-color: #ffffff51;
+  box-shadow: inset 2px 2px 10px 1px rgba(255, 255, 255, 0.253);
+}
+.appli h5{
+  position: relative;
+  top: 10%;
+  left: 4%;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+.appli p{
+  margin: 3px 5px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.74);
+  font-family: sans-serif;
+
+}
