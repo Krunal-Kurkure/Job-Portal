@@ -131,7 +131,7 @@ nav i {
   height: 150px;
   margin: 2%;
   border-radius: 5px;
-  background-image: url(images/profilebanner.jpg);
+  background-image: url(profilebanner.jpg);
   background-repeat: no-repeat;
   background-position: 60%;
   background-size: auto 150px;
@@ -183,7 +183,7 @@ nav i {
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  background-image: url(images/profile.jpg);
+  background-image: url(profile.jpg);
   background-repeat: no-repeat;
   background-size: 129px;
 }
