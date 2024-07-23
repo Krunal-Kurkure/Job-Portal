@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(217, 255, 234);
+}
+
+/* ---------------------------- CSS CODE OF NAVBAR ------------------------ */
+.container {
+  display: flex;
+  width: 100vw;
+  margin: auto;
+}
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(6, 111, 0, 0.775),
+    rgb(0, 108, 13),
+    rgb(0, 91, 15),
+    rgb(0, 67, 11)
+  );
+}
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 3rem 0 1rem 0;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.logo #joblogo {
+  width: 50px;
+  height: 35px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 50%;
+}
+.logo h1 {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+ul {
+  margin: 0 auto;
+}
+li {
+  padding-bottom: 2rem;
+}
+li a {
+  font-size: 16px;
+
+  color: #ffffff65;
+  transition: 0.3s;
+}
+li a:hover {
+  font-size: 18px;
+  color: #fff;
+}
+#Ana {
+  font-size: 18px;
+  color: #fff;
+}
+nav i {
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+}
+
+/* ---------------------------- CSS CODE OF MAIN BODY ------------------------ */
+.main {
+  width: 100%;
+}
+
+.main-body {
+  padding: 10px 10px 0px 20px;
+}
+.main-body h1 {
+  margin: 20px 10px;
+  color: rgb(0, 56, 9);
+}
+.main-body h5 {
+  margin-left: 10px;
+  color: rgb(0, 106, 18);
+}
+/* --------------------- CODE OF JOB APPLICATION PROCESS ------------- */
+.jobappliprocess {
+  width: auto;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.jobappliprocess img {
+  position: relative;
+  top: 7%;
+  width: 220px;
+  height: 220px;
+  margin-left: 3%;
+  mix-blend-mode: darken;
+  transition: 0.3s;
+}
+.jobappliprocess img:hover {
+  transform: scale(1.05);
+}
+.jobprocessteps {
+  position: relative;
+  top: 15%;
+  width: 690px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 180px;
+  margin-right: 6%;
+}
+
+.jobsteps {
+  width: 210px;
+  height: 60px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 2px solid rgb(6, 100, 6);
+  background-color: rgb(213, 255, 213);
+  box-shadow: inset 3px 2px 8px 1px rgba(0, 0, 0, 0.349),
+    3px 2px 3px 1px rgba(0, 0, 0, 0.368);
+}
+
+.jobsteps:hover {
+  border: none;
+  background-color: rgb(4, 51, 0);
+  box-shadow: inset 3px 2px 5px 1px rgba(255, 255, 255, 0.7),
+    inset -2px -3px 5px 3px rgba(0, 0, 0, 0.806);
+}
+.jobsteps:hover i {
+  color: #fff;
+}
+.jobsteps:hover h3 {
+  color: #fff;
+}
+.jobprocessteps .job1 {
+  width: 160px;
+}
+.line {
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  z-index: -1;
+  background-color: rgb(6, 100, 6);
+}
+.line1 {
+  top: 16%;
+  left: 23%;
+}
+.line2 {
+  top: 16%;
+  left: 65%;
+}
+
+.line3 {
+  top: 42%;
+  left: 87%;
+  transform: rotate(90deg);
+}
+
+.line4 {
+  top: 68%;
+  left: 72%;
+}
+.line5 {
+  top: 68%;
+  left: 24%;
+}
+.job1flex {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.job1flex i {
+  margin-top: 12px;
+  font-size: 30px;
+  color: rgb(0, 50, 8);
+}
+
+.job1flex h3 {
+  line-height: 14px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 55, 9);
+}
+
+.jobprocessteps .job2 {
+  width: 260px;
+}
+.job2flex {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.job2flex i {
+  margin: 15px;
+  font-size: 30px;
+  color: rgb(0, 50, 8);
+}
+
+.job2flex h3 {
+  line-height: 14px;
+  margin: 14px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 55, 9);
+}
+
+.jobprocessteps .job3 {
+  width: 210px;
+}
+
+.job3flex {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.job3flex i {
+  margin: 15px;
+  font-size: 30px;
+  color: rgb(0, 50, 8);
+}
+
+.job3flex h3 {
+  line-height: 14px;
+  margin: 14px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 55, 9);
+}
+
+.jobprocessteps .job4 {
+  width: 170px;
+}
+
+.job4flex {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.job4flex i {
+  margin: 15px;
+  font-size: 30px;
+  color: rgb(0, 50, 8);
+}
+
+.job4flex h3 {
+  line-height: 14px;
+  margin: 14px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 55, 9);
+}
+
+.jobprocessteps .job5 {
+  width: 300px;
+}
+.jobprocessteps .job6 {
+  width: 160px;
+}
+
+/* ------------------------ CODE OF MAIN FROM ------------------ */
+.mainfrom {
+  margin: 30px 30px;
+  width: auto;
+  height: 1500px;
+  border-radius: 7px;
+  background-color: #e1ffea;
+  border: 1.5px solid rgb(0, 94, 0);
+}
+.mainfrom h2 {
+  padding: 18px 30px 0px 30px;
+  color: rgb(0, 56, 9);
+}
+.mainfrom p {
+  font-size: 12px;
+  padding: 10px 30px 20px 30px;
+}
+
+
+/* ------------------ CODE FOR FULLNAME FROM ---------------------- */
+.fullname {
+  width: auto;
+  height: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(0, 0, 0, 0.351);
+}
+.fullname .box {
+  width: 290px;
+  height: auto;
+}
+.fullname .box1 h3 {
+  margin: 8% auto 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.fullname .box1 input {
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+  
+}
+.fullname .box1 input:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+.fullname .box1 h6 {
+  margin: 12px auto 0px;
+  font-weight: 400;
+}
+.fullname .box2 input {
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 63px;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+}
+.fullname .box2 input:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+.fullname .box2 h6 {
+  margin: 12px auto 0px;
+  font-weight: 400;
+}
+.fullname .box3 input {
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 63px;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+}
+.fullname .box3 input:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+.fullname .box3 h6 {
+  margin: 12px auto 0px;
+  font-weight: 400;
+}
+
+
+
+
+/* ------------------ CODE FOR BIRTHDAY FROM ---------------------- */
+.Birthdate {
+  width: auto;
+  height: 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Birthdate div {
+  width: 290px;
+  height: auto;
+  background-color: #e1ffea;
+}
+.Birthdate h3 {
+  margin: 8% auto 12px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.Birthdate select{
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+}
+.Birthdate select:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+.Birthdate h6 {
+  margin: 12px auto 0px;
+  font-weight: 400;
+}
+
+.bbox2 select{
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 63px;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+}
+
+.bbox3 select{
+  width: 290px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 63px;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+}
+
+/* --------------- CODE OF ADDRESS FORM ------------- */
+.address{
+  margin: 3%;
+  width: auto;
+  height: 350px;
+}
+.address h3{
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.address input{
+  width: 925px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 2%;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+  background-color: #e1ffea;
+  transition: 0.3s;
+}
+.address input:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+.address h6{
+  margin: 12px auto 0px;
+  font-weight: 400;
+}
+.add{
+  margin-top: 1%;
+  width: auto;
+height: 70px ;
+display: flex;
+justify-content: space-between;
+}
+.add input{
+  width: 450px;
+}
+
+.add input:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+/* -------------------- CODE OF EMAIL FORM ------------------ */
+.Email{
+ width: auto;
+ height: 130px;
+ display: flex;
+ justify-content: space-evenly;
+}
+.Email div{
+  width: 290px;
+  height: 110px;
+}
+.Email h3{
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.Email input{
+  margin-top: 5%;
+  width: 290px;
+  padding: 3%;
+  height: 35px;
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #e1ffea;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+} 
+.Email input:hover{
+  border-radius: 50px;
+  border: 1px solid rgb(0, 107, 9);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+hr{
+  position: relative;
+  width: 94%;
+  left: 3%;
+}
+/* -------------------- CODE OF POSITION FORM ------------------ */
+.Position{
+  margin-top: 4%;
+  width: auto;
+  height: 110px;
+  display: flex;
+  justify-content: space-evenly;
+ }
+ .Position div{
+   width: 290px;
+   height: 110px;
+ }
+ .Position h3{
+   font-weight: 500;
+   font-family: "Poppins", sans-serif;
+ }
+ .Position input{
+   margin-top: 5%;
+   width: 290px;
+   padding: 3%;
+   height: 35px;
+   transition: 0.3s;
+   border-radius: 5px;
+   background-color: #e1ffea;
+   border: 1.5px solid rgba(0, 0, 0, 0.348);
+ } 
+ .Position input:hover{
+   border-radius: 50px;
+   border: 1px solid rgb(0, 107, 9);
+   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+ }
+
+ /* ------------------------ CODE OF RESUME FROM ------------------ */
+ .resume{
+  width: auto;
+  margin: 0px 30px;
+  height: 200px;
+ }
+ .resume h3{
+  font-weight: 500;
+   font-family: "Poppins", sans-serif;
+ }
+.mainresume{
+  width: auto;
+  margin-top: 1%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: #dbdbdb;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+}
+.mainresume i{
+  font-size: 30px;
+}
+.mainresume h4{
+  margin-top: 1%;
+}
+.mainresume p{
+  margin: 0%;
+  padding: 0%;
+}
+.mainresume:hover{
+  background-color: black;
+}
+.mainresume:hover i{
+  color: #fff;
+}
+.mainresume:hover h4{
+  color: #fff;
+}
+.mainresume:hover p{
+  color: #fff;
+}
+
+/* ------------------ CODE OF LETTER FORM -------------- */
+.Letter{
+  margin: 0px 30px;
+  width: auto;
+  height: 180px;
+}
+.Letter h3{
+  
+  font-weight: 500;
+   font-family: "Poppins", sans-serif;
+}
+.Letter input{
+  width: 930px;
+  height: 100px;
+  margin-top: 2%;
+    padding: 3%;
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #e1ffea;
+  border: 1.5px solid rgba(0, 0, 0, 0.348);
+}
+
+.Letter input:hover{
+
+ border: 1px solid rgb(0, 107, 9);
+   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.418);
+}
+button{
+  
+  position: relative;
+  left: 45%;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(0, 28, 0);
+  color: #fff;
+  transition:0.3s;
+}
+button:hover{
+  border: 2px solid black;
+  color: rgb(0, 66, 10);
+  background-color: transparent;
+}
